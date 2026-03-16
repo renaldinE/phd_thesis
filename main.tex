@@ -90,24 +90,24 @@ headsepline, % Uncomment to get a line under the header
 % Those information will be used to generate the title page and the abstract. You can also access this information with the corresponding keyword. 
 
 % Keywords used in the template. 
-\thesistitle{Thesis Title} % Your thesis title, print it with \ttitle
-\supervisor{Prof. Dr. Charles Darwin} % Your supervisor's name, print it with \supname. Include academic title.
-\coadvisor{Prof. Dr. Gregor Mendel} %Your co-advisors's name, print it with \coaname. Include academic title.
-\firstname{John} % Your first name, print it with \fname. 
-\lastname{Smith} % Your last name, print it with \lname .
+\thesistitle{Production of medically relevant radiolanthanides} % Your thesis title, print it with \ttitle
+\supervisor{Prof. Dr. Robert Eichler} % Your supervisor's name, print it with \supname. Include academic title.
+\coadvisor{Dr. Zeynep Talip} %Your co-advisors's name, print it with \coaname. Include academic title.
+\firstname{Edoardo} % Your first name, print it with \fname. 
+\lastname{Renaldin} % Your last name, print it with \lname .
 \author{\fname~ \lname} % Your whole name made from your input, print it with \authorname.
-\matriculationnumber{19-271-631} % Your matriculation number, print it with \matrnumber
-\degree{PhD in Cell Biology} % Your degree name, print it with \degreename. 
+\matriculationnumber{22-136-303} % Your matriculation number, print it with \matrnumber
+\degree{PhD in Chemistry and Molecular Sciences} % Your degree name, print it with \degreename. 
 %Possible degrees at the GCB: PhD in Biochemistry and Molecular Biology, PhD in Cell Biology, PhD in Biomedical Engineering, PhD in Biomedical Sciences, PhD in Immunology, PhD in Neuroscience, Doctor of Medicine and Philosophy (MD,PhD), Doctor of Veterinary Medicine and Philosophy (DVM,PhD), Doctor of Dentistry and Philosophy (DDS,PhD), PhD in Computational Biology, 
-\institute{\href{https://www.izb.unibe.ch/}{Institute of Cell Biology}} % Your department's name and URL, print it with \instname
-\faculty{\href{https://www.philnat.unibe.ch}{Faculty of Science}} % Your department's name and URL, print it with \facname. Possible faculties: Faculty of Medicine, Faculty of Science, Vetsuisse Faculty, Institute of Virology and Immunology IVI, Mittelhäusern, Institute for Research in Biomedicine IRB, Bellinzona
-\university{\href{https://www.unibe.ch/index_eng.html}{University of Bern}} % Your university's name and URL, print it with \univname. Possible Universities: University of Bern or University of Zurich (for Vetsuisse Zürich) 
+\institute{\href{https://www.unibe.ch/}{University of Bern}} % Your department's name and URL, print it with \instname
+\faculty{\href{https://www.philnat.unibe.ch/}{Faculty of Science}} % Your department's name and URL, print it with \facname. Possible faculties: Faculty of Medicine, Faculty of Science, Vetsuisse Faculty, Institute of Virology and Immunology IVI, Mittelhäusern, Institute for Research in Biomedicine IRB, Bellinzona
+\university{\href{https://www.unibe.ch/}{University of Bern}} % Your university's name and URL, print it with \univname. Possible Universities: University of Bern or University of Zurich (for Vetsuisse Zürich) 
 
 % The following keywords are not used in this template. But define it if you want to use it in the text. 
-\department{\href{https://www.izb.unibe.ch/}{Department of Biology}} % Your department's name and URL, print it with \deptname
+\department{\href{https://www.dcbp.unibe.ch/}{Department of Chemistry, Biochemistry and Pharmaceutical Sciences}} % Your department's name and URL, print it with \deptname
 \group{\href{https://www.GROUP_NAME.net/}{Group name}} % Your research group's name and URL, print it with \groupname
-\subject{Cell biology} % Your subject area, print it with \subjectname
-\keywords{} % Keywords for your thesis, print it with \keywordnames
+\subject{Radionuclide development} % Your subject area, print it with \subjectname
+\keywords{Radiolanthanide, cross section, proton beam} % Keywords for your thesis, print it with \keywordnames
 
 
 %----------------------------------------------------------------------------------------
@@ -142,12 +142,13 @@ headsepline, % Uncomment to get a line under the header
 }
  \begin{center}
 \hypersetup{hidelinks} 
- \vspace*{.06\textheight}
-  {\Large Graduate School for Cellular and Biomedical Sciences\par} % graduate school name
- {\LARGE \univname\par}\vspace{1.5cm} % University name
+% \vspace*{.08\textheight}
+%  {\Large Graduate School for Cellular and Biomedical Sciences\par} % graduate school name
+% {\LARGE \univname\par}\vspace{1.5cm} % University name
 % \textsc{\Large Doctoral Thesis}\\[0.5cm] % Thesis type
 
- {\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
+\vspace{3.0cm}
+ {\huge \bfseries \ttitle\par}\vspace{.8cm} % Thesis title
   {\Large PhD Thesis submitted by}\\[0.5cm]
   {\LARGE \bfseries \authorname \par}\vspace{0.4cm} % Author name 
   {\Large for the degree of}\\[0.5cm]
@@ -163,8 +164,8 @@ headsepline, % Uncomment to get a line under the header
 \vspace{0.4cm}
  \emph{Co-advisor}\\[1mm]
  {\Large \coaname}\\ % Supervisor name
- {\Large \href{https://www.mendel.uni.com/}{Institute of Gregor Mendel}}\\
- {\Large \href{https://www.sci.mendel.uni.com/}{Faculty of Science} of the \href{https://www.uni.com/}{University of Mendel}}
+ {\Large \href{https://www.psi.ch/}{Paul Scherrer Institute}}\\
+ {\Large \href{https://www.sci.mendel.uni.com/}{Laboratory of Radiochemistry} of the \href{https://www.uni.com/}{Paul Scherrer Institute}}
  
  \vfill
  \end{center}
@@ -260,13 +261,21 @@ The acknowledgments and the people to thank go here, don't forget to include you
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
 
-\include{Chapters/Chapter0} % Remove this line to remove the Introduction to the template
-\include{Chapters/Chapter1_Introduction} % Comprehensive introduction into the field
-\include{Chapters/Chapter2_Aim} % Hypothesis and aim of the thesis
-\include{Chapters/Chapter3_Results} % Results, can be added as published or submitted manuscripts. If this option is chosen, a separate page needs to be inserted before each manuscript in the thesis, where the title of the manuscript and a short description of your own contribution is stated (i.e., which experiments, which figures are yours).
+%\include{Chapters/Chapter0} % Remove this line to remove the Introduction to the template
+
+\include{Chapters/Chapter1} % Comprehensive introduction into the field
+
+%\include{Chapters/Chapter2}
+
+% Results, can be added as published or submitted manuscripts. If this option is chosen, a separate page needs to be inserted before each manuscript in the thesis, where the title of the manuscript and a short description of your own contribution is stated (i.e., which experiments, which figures are yours).
+
+%\include{Chapters/Chapter3}
 
 % It is only allowed to include published articles in the thesis, if the student is first, shared first, second or shared second author. If the student is third, fourth, fith…. author, a short summary of the publication needs to be done and included in thesis. Please do not forget to cite correctly.
-\include{Chapters/Chapter4_Disscusion} % Overall discussion and outlook/perspectives
+
+% Overall discussion and outlook/perspectives
+
+%\include{Chapters/Chapter4} 
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
