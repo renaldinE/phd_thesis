@@ -54,13 +54,13 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage[backend=biber,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
 
-\addbibresource{example.bib} % The filename of the bibliography
+\addbibresource{{C:/Users/renald_e/Documents/BibTex/library.bib}} % The filename of the bibliography
 
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
 \usepackage{svg}
 \usepackage[]{hyperref}
-\usepackage[nameinlink]{cleveref} % Easy references to Figures, Tables and sections (\cref{})
+%\usepackage[nameinlink]{cleveref} % Easy references to Figures, Tables and sections (\cref{})
 \usepackage{pdfpages} % insert pdf documents
 \usepackage[pagestyles]{titlesec} % remove the prefix ChapterN from the chapter name and in the headers
 \titleformat{\chapter}[display]{\normalfont\bfseries}{}{0pt}{\Huge}
@@ -68,6 +68,65 @@ headsepline, % Uncomment to get a line under the header
 {\sethead[\thepage][][\chaptertitle]{}{}{\thepage}}
 \pagestyle{mystyle}
 \setcounter{tocdepth}{2} % adjust depth of TOC: 0-chapter, 1-sectiom, 2-subsection
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL PACKAGES
+%----------------------------------------------------------------------------------------
+
+\usepackage[acronym,nomain,automake]{glossaries}
+\makeglossaries
+\hypersetup{
+	colorlinks=true,
+	allcolors=black
+}
+\usepackage{textgreek}
+
+%----------------------------------------------------------------------------------------
+%	ACRONYMS
+%----------------------------------------------------------------------------------------
+
+\newacronym{hetp}{HETP}{height equivalent to theoretical plate}
+\newacronym{eoi}{EoI}{end of irradiation}
+\newacronym{eos}{EoS}{end of separation}
+\newacronym{psi}{PSI}{Paul Scherrer Institut}
+\newacronym{ptb}{PTB}{Physikalisch-Technische Bundesanstalt}
+\newacronym{trt}{TRT}{targeted radionuclide therapy}
+\newacronym{spect}{SPECT}{single-photon emission computed tomography}
+\newacronym{hpge}{HPGe}{high-purity germanium}
+\newacronym{icpms}{ICP-MS}{inductively coupled-plasma mass spectrometry}
+\newacronym{icpoes}{ICP-OES}{inductively coupled-plasma optical emission spectrometry}
+\newacronym{fep}{FEP}{full-energy peak}
+\newacronym{IT}{IT}{internal transition}
+\newacronym{dcbp}{DCBP}{Department of Chemistry, Biochemistry and Pharmacy}
+\newacronym{iupac}{IUPAC}{International Union of Pure and Applied Chemistry}
+\newacronym{ae}{AE}{Auger electron}
+\newacronym{ce}{CE}{conversion electron}
+\newacronym{mcrpc}{mCRPC}{metastatic castration-resistant prostate cancer}
+\newacronym{net}{NET}{neuroendocrine tumor}
+\newacronym{sirt}{SIRT}{selective internal radiation therapy}
+\newacronym{mri}{MRI}{magnetic resonance imaging}
+\newacronym{ca}{c.a.}{carrier-added}
+\newacronym{nca}{n.c.a.}{non-carrier-added}
+\newacronym{ill}{ILL}{Institut Laue-Langevin}
+\newacronym{exc}{EXC}{extraction chromatography}
+\newacronym{cex}{CEX}{cation exchange chromatography}
+\newacronym{ahiba}{\textalpha{}-HIBA}{\textalpha{}-hydroxyisobutyric acid}
+\newacronym{ptfe}{PTFE}{polytetraflouroethylene}
+\newacronym{bs}{BS}{bottom Sykam}
+\newacronym{ts}{TS}{top Sykam}
+\newacronym{sinq}{SINQ}{Swiss Neutron Spallation Source}
+\newacronym{peek}{PEEK}{polyether ether ketone}
+\newacronym{bv}{BV}{bed volume}
+\newacronym{sdd}{SDD}{source-to-detector distance}
+\newacronym{hplc}{HPLC}{high-performance liquid chromatography}
+\newacronym{let}{LET}{linear energy transfer}
+\newacronym{dota}{DOTA}{2,2$^\prime$,2$^{\prime \prime}$,2$^{\prime \prime \prime} $-(1,4,7,10-tetraazacyclododecane-1,4,7,10-tetrayl)tetraacetic acid}
+\newacronym{etoh}{EtOH}{ethanol}
+\newacronym{cmi}{CMI}{Czech Metrology Institute}
+\newacronym{mda}{MDA}{minimum detectable activity}
+\newacronym{ama}{AMA}{apparent molar activity}
+\newacronym{hcc}{HCC}{hepatocellular carcinoma}
+\newacronym{fwhm}{FWHM}{full width at half maximum}
 
 %----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS
@@ -263,7 +322,7 @@ The acknowledgments and the people to thank go here, don't forget to include you
 
 %\include{Chapters/Chapter0} % Remove this line to remove the Introduction to the template
 
-\include{Chapters/Chapter1} % Comprehensive introduction into the field
+\include{Chapters/Introduction} % Comprehensive introduction into the field
 
 %\include{Chapters/Chapter2}
 
@@ -286,7 +345,7 @@ The acknowledgments and the people to thank go here, don't forget to include you
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-\include{Appendices/AppendixA}
+%\include{Appendices/AppendixA}
 %\include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
 
@@ -294,19 +353,19 @@ The acknowledgments and the people to thank go here, don't forget to include you
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
-\printbibliography[heading=bibintoc]
+%\printbibliography[heading=bibintoc]
 
 
 %----------------------------------------------------------------------------------------
 %	CV
 %----------------------------------------------------------------------------------------
-\begin{cvpage}
-\phantomsection
-\addchaptertocentry{\cv} % Add the cv to the table of contents
-
-\includepdf[pages=-]{Extra/cv.pdf} % Just replace the cv.pdf file in the "Extra" folder with your own cv. 
-
-\end{cvpage}
+%\begin{cvpage}
+%\phantomsection
+%\addchaptertocentry{\cv} % Add the cv to the table of contents
+%
+%\includepdf[pages=-]{Extra/cv.pdf} % Just replace the cv.pdf file in the "Extra" folder with your own cv. 
+%
+%\end{cvpage}
 
 %----------------------------------------------------------------------------------------
 %	LIST OF PUBLICATIONS
